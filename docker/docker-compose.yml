@@ -1,0 +1,55 @@
+#
+# 이 파일은 도커를 관리하는 파일입니다. 
+#
+version: '2'
+services:
+
+  # m2pub 개발 실행 컨테이너 jekyll을 이용
+  m2pub-jekyll-dev:
+    image: jekyll/jekyll:3.8.5
+    ports:
+      - 5000:5000
+      - 35729:35729
+    volumes:
+      - ${HOME}/m2pub.github.io/:/srv/jekyll
+      - ${HOME}/m2pub.github.io/bundle:/usr/local/bundle
+    environment:
+      - LANG=ko_KR.UTF-8
+      - LANGUAGE=ko_KR
+      - TZ=Asia/Seoul
+      - LC_ALL=ko_KR.UTF-8
+      # - BUNDLE_PATH=/bundle
+    restart: unless-stopped
+    command: jekyll serve
+
+  just-the-docs-jekyll-dev:
+    image: jekyll/jekyll:3.8.5
+    ports:
+      - 5000:5000
+      - 35729:35729
+    volumes:
+      - ${HOME}/just-the-docs/:/srv/jekyll
+    environment:
+      - LANG=ko_KR.UTF-8
+      - LANGUAGE=ko_KR
+      - TZ=Asia/Seoul
+      - LC_ALL=ko_KR.UTF-8
+    restart: unless-stopped
+    command: jekyll serve
+
+  # # m2pub 개발용 이미지
+  # pub-jekyll:
+  #   build: 
+  #     context: ./pub-jekyll
+  #     dockerfile: Dockerfile
+  #   image: m2/pub-jekyll:0.1
+
+  # # m2pub 개발 실행 컨테이너
+  # pub-jekyll-dev:
+  #   image: m2/pub-jekyll:0.1
+  #   container_name : pub-jekyll-dev-container
+  #   ports:
+  #     - 5000:4000
+  #   command: bash
+
+  
