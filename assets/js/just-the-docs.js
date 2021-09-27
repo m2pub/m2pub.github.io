@@ -1,7 +1,6 @@
 ---
 ---
 (function (jtd, undefined) {
-
 // Event handling
 
 jtd.addEvent = function(el, type, handler) {
