@@ -35,4 +35,8 @@ permalink     : /docs/links/0900-0060
 
   *  `[ https://darutk.medium.com/diagrams-of-all-the-openid-connect-flows-6968e3990660 ]`
 
+### JWK 온라인 생성기
 
+- [JWK 온라인 생성기](https://mkjwk.org/)
+
+  *  `[ https://mkjwk.org/ ]`
