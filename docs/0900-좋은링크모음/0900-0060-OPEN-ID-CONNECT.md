@@ -46,3 +46,9 @@ permalink     : /docs/links/0900-0060
 - [Diagrams of All The OpenID Connect Flows](https://darutk.medium.com/diagrams-of-all-the-openid-connect-flows-6968e3990660)
 
   *  `[ https://darutk.medium.com/diagrams-of-all-the-openid-connect-flows-6968e3990660 ]`
+
+
+### Istio+Dex(OIDC)를 이용한 HTTP 서비스 인증
+
+- [Istio+Dex(OIDC)를 이용한 HTTP 서비스 인증](https://lcc3108.github.io/articles/2020-12/Istio+Dex-인증) `[ https://lcc3108.github.io/articles/2020-12/Istio+Dex-인증 ]`
+
